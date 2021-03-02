@@ -38,7 +38,7 @@ def errors_response():
     else:
         return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter)
         
-    return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter))
+    #return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter))
 
 if __name__ == "__main__":
     requestCounter = 0 # global variable to store total number of requests
