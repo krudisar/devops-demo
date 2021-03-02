@@ -31,14 +31,14 @@ def errors_response():
     requestCounter += 1
     '''
         -> simulate 10% error rate
-    '''
+   
     random_int = random.randint(0,10000)
     if str(random_int)[0] == '1':
         return "Record not found", status.HTTP_400_BAD_REQUEST
     else:
         return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter))
-        
-    #return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter))
+    '''    
+    return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter))
 
 if __name__ == "__main__":
     requestCounter = 0 # global variable to store total number of requests
