@@ -36,7 +36,7 @@ def errors_response():
     if str(random_int)[0] == '1':
         return "Record not found", status.HTTP_400_BAD_REQUEST
     else:
-        return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter)
+        return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter))
         
     #return 'This is a UNSTABLE response to your HTTP request ....! # {0}'.format(str(requestCounter))
 
