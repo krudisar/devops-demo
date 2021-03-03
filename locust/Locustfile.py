@@ -4,7 +4,7 @@ import logging
 from locust import events
 #
 
-''' test si considered as successful if ...
+''' test si considered as FAILED if ...
   More than 1% of the requests failed
   The average response time is longer than 200 ms
   The 95th percentile for response time is larger than 800 ms
