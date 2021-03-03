@@ -6,7 +6,7 @@ from locust import events
 
 ''' perf test is marked as FAILED if ...
   1) More than 1% of the requests failed
-  2) The average response time is longer than 200 ms
+  2) The average response time is longer than 10 ms
   3) The 95th percentile for response time is larger than 800 ms
 '''
 @events.quitting.add_listener
