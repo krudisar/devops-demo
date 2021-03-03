@@ -4,10 +4,10 @@ import logging
 from locust import events
 #
 
-''' test si considered as FAILED if ...
-  More than 1% of the requests failed
-  The average response time is longer than 200 ms
-  The 95th percentile for response time is larger than 800 ms
+''' perf test is marked as FAILED if ...
+  1) More than 1% of the requests failed
+  2) The average response time is longer than 200 ms
+  3) The 95th percentile for response time is larger than 800 ms
 '''
 @events.quitting.add_listener
 def _(environment, **kw):
