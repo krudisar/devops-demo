@@ -22,7 +22,7 @@ def fast_response():
 def slow_response():
     global requestCounter
     requestCounter += 1
-    #time.sleep(500 / 1000) # add 500 ms latency
+    time.sleep(500 / 1000) # add 500 ms latency
     return 'This is a SLOW response to your HTTP request ....! # {0}'.format(str(requestCounter))
 
 @app.route('/unstable')
